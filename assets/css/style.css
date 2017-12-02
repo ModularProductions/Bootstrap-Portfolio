@@ -1,17 +1,43 @@
-body {
+html, body {
   background: url("../images/creampaper.png");
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777;
+  height: 100%;
 }
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -70px;
+  padding-bottom: 70px;
+}
+
 nav {
   margin-bottom: 20px;
   text-align: center;
-  height: 70px;
 }
 
 nav .container {
-  padding: 0;
-  margin: auto auto;
+  height: 70px;
+}
+
+nav.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: xx-large;
+  text-decoration: none;
+  line-height: 70px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.navbar-brand {
+  float: none;
+}
+
+.navbar-header {
+  width: auto;
+  background-color: #4aaaa5;
+  margin: 0 auto;
+  height: 100%;
 }
 
 h2 {
@@ -23,19 +49,35 @@ h2 {
   padding-bottom: 20px; 
 }
 
-#content {
-  padding: 20px;
+#about, #portfolio, #contact {
+  padding: 0 20px 20px 20px;
 }
 
-#content img {
+#about img {
+  margin-right: 2rem;
+  margin-bottom: .5rem;
+}
+
+#connect{
+  padding: 20px;
+  text-align: center;
+}
+
+#connect ul {
+  padding: 0;
+}
+
+#connect li {
+  display: inline-block;
+  padding: 0px 2px;
+
 }
 
 .section {
+  display: block;
   background-color: #fff;
   border: 2px solid #ddd;
   margin: 0 0 20px;
-  text-align: justify;
-  overflow: auto;
 }
 
 .footer {
@@ -43,12 +85,33 @@ h2 {
   height: 70px;
   border-top: solid 4px #4aaaa5;
   background-color: #666;
-  font-size: small;
   color: #bbb;
   text-align: center;
   overflow: hidden;
 }
 
-@media screen and (min-width: 640px) {
+.thumbnail {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
 
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail .caption {
+  padding: 0;
+}
+
+.thumbnail .caption h3 {
+  width: 100%;
+  background-color: #4aaaa5;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  padding: 20px 0;
+  margin: 0;
+  height: 3em;
 }
