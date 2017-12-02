@@ -17,10 +17,6 @@ nav {
   text-align: center;
 }
 
-nav .container {
-  height: 70px;
-}
-
 nav.navbar-default .navbar-brand {
   color: #fff;
   font-size: xx-large;
@@ -68,7 +64,7 @@ h2 {
   padding: 0;
 }
 
-#connect li {
+#connect li , .navbar-nav li {
   display: inline-block;
   padding: 0px 2px;
 
